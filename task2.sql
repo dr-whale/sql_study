@@ -1,0 +1,15 @@
+-- Задание 2: Вывод только четных чисел от 1 до 10
+SELECT num
+FROM (
+    SELECT 1 AS num
+    UNION ALL SELECT 2
+    UNION ALL SELECT 3
+    UNION ALL SELECT 4
+    UNION ALL SELECT 5
+    UNION ALL SELECT 6
+    UNION ALL SELECT 7
+    UNION ALL SELECT 8
+    UNION ALL SELECT 9
+    UNION ALL SELECT 10
+) AS numbers
+WHERE num % 2 = 0;
